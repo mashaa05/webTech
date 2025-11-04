@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Donation Form</title>
+        <link rel="stylesheet" href="lab03_style.css">
+    </head>
+    <body>
+        <p class="note"><span class="required">*</span> -Denotes Required Information</p>
+        <p >> 1 Donation  >2 Confirmation  >Thank You!</p>
+        
+        <form class="form" action="/register" method="post">
+        <h2 class="title">Donation Form</h2>
+    <div>
+        <label for="firstname"><b>First Name</b><span class="required">*</span></label>
+        <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <div>
+        <label for="lasttname"><b>Last Name</b><span class="required">*</span></label>
+        <input type="text" id="lastname" name="lastname" required>
+    </div>
+    <div>
+        <label for="company"><b>Company</b></label>
+        <input type="text" id="company" name="company"><br>
+    </div>
+    <div>
+        <label for="Address"><b>Address 1</b><span class="required">*</span></label>
+        <input type="text" id="Address_1" name="Address_1" required>
+    </div>
+    <div>
+        <label for="Address_2"><b>Address 2</b></label>
+        <input type="text" id="Address_2" name="Address_2" required>
+    </div>
+    <div>
+        <label for="city"><b>City</b></label>
+        <input type="text" id="city" name="city" required>
+    </div>
+    <div>
+        <label for="state"><b>State</b><span class="required">*</span></label>
+        <select id="state" name="city" required><br><br>
+            <option value="selectCity">Select a state</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Sylhet">Sylhet</option>
+        </select></div>
+    <div>
+        <label for="zipCode"><b>Zip Code</b><span class="required">*</span></label>
+        <input type="number" id="zipCode" name="zipCode" required><br>
+    </div>
+    <div>
+        <label for="country"><b>Country:</b></label>
+        <select id="country" name="country" required><br><br>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+        </select>
+    </div>
+    <div>
+        <label for="phone"><b>Phone</b><span class="required">*</span></label>
+        <input type="number" id="phone" name="phone" required>
+    </div>
+    <div>
+        <label for="fax"><b>Fax</b></label>
+        <input type="number" id="fax" name="fax" required>
+    </div>
+    <div>
+        <label for="email"><b>Email</b><span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+    </div>  
+    <div> 
+        <label><b>Donation Amount</b><span class="required">*</span></label>
+        <div class="amount-group">
+            <label for="first">None</label>
+            <input type="radio" id="first" required>
+            <label for="second">$50</label>
+            <input type="radio" id="second" required>
+            <label for="third">$75</label>
+            <input type="radio" id="third" required>
+            <label for="fourth">$100</label>
+            <input type="radio" id="fourth" required>
+            <label for="fifth">$250</label>
+            <input type="radio" id="fifth" required>
+            <label for="sixth">other</label>
+            <input type="radio" id="sixth" required>
+        </div></div> 
+        <div>
+        <label><b>Other Amount $</b></label>
+        <input type="text" id="amount"></div>
+        <div>
+        <label><b>Recurring Donation</b></label>
+        <input type="checkbox" name="recurring"> I am interested in giving on a regular basis.
+        </div>   
+            <div>
+                <label>Monthly Credit Card $ </label>
+                <input type="number" name="monthly" class="monthly">
+                <label>for</label> 
+                <input type="number" name="months" class="monthly"> Months
+            </div>
+        </div>
+
+
+
+    <h2 class="title">Honorarium and Memorial Donation Information</h2>
+    <div>
+        <label><b>I would like to make this donation</b></label>
+        <input type="radio" id="first">To Honor<br>
+        <input type="radio" id="second">In memory of
+    </div><br>
+    <div>
+        <label for="name"><b>Name</b></label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="acknowledge"><b>Acknowledge Donation To</b></label>
+        <input type="text" id="acknowledge" name="acknowledge">
+    </div>
+    <div>
+        <label for="Address"><b>Address</b></label>
+        <input type="text" id="Address" name="Address" required>
+    </div>
+ <div>
+        <label for="city"><b>City</b></label>
+        <input type="text" id="city" name="city" required>
+    </div>
+    <div>
+        <label for="state"><b>State</b><span class="required">*</span></label>
+        <select id="state" name="city" required><br><br>
+            <option value="selectCity">Select a state</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Sylhet">Sylhet</option>
+        </select></div>
+    <div>
+    <div>
+        <label for="zip"><b>Zip</b></label>
+        <input type="number" id="zip" name="zip"><br>
+    </div>
+
+
+
+
+     <h2 class="title">Additional Information</h2>
+     <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
+    <div>
+        <label for="name"><b>Name</b></label>
+        <input type="text" id="name" name="name">
+    </div>
+
+     <div>
+        <input type="checkbox" id="first">
+        <label>I would like my gift to remain anonymous.</label><br>
+        <input type="checkbox" id="second">
+        <label>My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+        <input type="checkbox" id="third">
+        <label>Please save the cost of acknowledging this gift by not mailing a thank you letter.</label><br>
+     </div>
+
+     <div>
+            <label><b>Comments</b><br><small>(Please type any questions or feedback here)</small></label>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+    <div>
+        
+        <label><b>How may we contact you?</b></label>
+            <div>
+                <input type="checkbox" name="contact" value="email"> 
+                <label>E-mail</label><br>               
+                <input type="checkbox" name="contact" value="mail"> 
+                <label>Postal Mail</label><br>   
+                <input type="checkbox" name="contact" value="telephone"> 
+                <label>Telephone</label><br>      
+                <input type="checkbox" name="contact" value="fax"> 
+                <label>Fax</label>
+            </div>
+    </div>
+        <label>I would like to receive newsletters and information about special events by:</label>
+        <div>
+                <input type="checkbox" name="newsletter" value="email"> 
+                <label>E-mail</label><br>
+                <input type="checkbox" name="newsletter" value="mail"> 
+                <label>Postal Mail</label>
+            </div><br>
+  
+        <input type="checkbox" name="info"> 
+        <label>I would like information about volunteering with the organization.</label>
+
+        <div class="buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Continue">
+        </div>
+        <p class="note-text">Donate online with confidence. You are on a secure server.</p>
+        <p class="note-text">If you have any problems or questions, please contact <a href="#">support</a></p>
+        </form>
+        
+    </body>
+
+</html>
